@@ -1,0 +1,25 @@
+body {
+  font-family: $font-main;
+}
+
+h1 {
+  color: $pink-high;
+  font-size: 15rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  color: #498c80;
+  font-size: 10rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $font-normal;
+
+  @include mobile {
+    font-size: 3em;
+  }
+  @include mobile-landscape {
+    font-size: 4rem;
+  }
+}
