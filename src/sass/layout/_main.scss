@@ -1,0 +1,13 @@
+.portfolio {
+  width: 100%;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &--item {
+      height: 30rem;
+      border: 1px solid #333;
+    }
+  }
+}

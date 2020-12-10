@@ -1,0 +1,16 @@
+.footer {
+  background-color: $dark-high;
+  color: $light;
+
+  &__content {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--text {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .hero {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background: url("../images/hero.jpeg") no-repeat center center/cover;
   background-color: #2d3436;
@@ -43,6 +43,7 @@
     }
 
     &--main {
+      color: $pink-high;
       text-shadow: 0.5rem 0.5rem 0 $pink-low;
       background: #fff;
       box-shadow: 0.5rem 0.5rem 0 pink;
@@ -75,6 +76,8 @@
     }
 
     &--sub {
+      font-size: 10rem;
+      color: #498c80;
       text-shadow: 0.5rem 0.5rem 0 $green-main;
       background-color: #fff;
       transform: skewY(-1deg);
