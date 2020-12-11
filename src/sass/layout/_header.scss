@@ -2,13 +2,12 @@
   max-width: 100vw;
   height: 100vh;
   background: url("../images/hero.jpeg") no-repeat center center/cover;
-  background-color: #2d3436;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   @include mobile {
-    height: 70vw;
+    height: 100vh;
   }
 
   &::after {
@@ -32,81 +31,128 @@
     flex-wrap: wrap;
 
     &--main,
-    &--sub {
-      margin: 2rem 0;
+    &--sub,
+    &--hash {
+      margin: 3rem 0;
       position: relative;
       z-index: 2;
       padding: 1rem;
       @include mobile {
-        margin: 0.5rem 0;
+        margin: 2rem 0;
+      }
+
+      @include mobile-landscape {
+        margin: 1rem 0;
       }
     }
 
     &--main {
-      color: $pink-high;
+      font-size: 15rem;
+      color: $yellow-low;
       text-shadow: 0.5rem 0.5rem 0 $pink-low;
-      background: #fff;
-      box-shadow: 0.5rem 0.5rem 0 pink;
+      background: $light;
+      box-shadow: 0.5rem 0.5rem 0 $dark-low;
       transform: skewY(-1deg);
+
+      @include mobile {
+        font-size: 5rem;
+        width: 80%;
+      }
+
+      @include mobile-landscape {
+        font-size: 5rem;
+      }
+
+      @include tablet {
+        font-size: 9rem;
+      }
+
       &::before {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 20%;
-        background-color: $blue-main;
-        bottom: 0;
-        right: -2%;
-        z-index: 2;
-        opacity: 0.7;
         transform: rotate(-30deg);
+        bottom: 0;
+        right: -5%;
+        @include tape-effect;
       }
 
       &::after {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 20%;
-        background-color: $blue-main;
         top: 0;
-        left: -2%;
-        z-index: 2;
-        opacity: 0.7;
+        left: -5%;
         transform: rotate(-25deg);
+        @include tape-effect;
       }
     }
 
     &--sub {
       font-size: 10rem;
-      color: #498c80;
-      text-shadow: 0.5rem 0.5rem 0 $green-main;
-      background-color: #fff;
+      color: $blue-low;
+      text-shadow: 0.5rem 0.5rem 0 $red-main;
+      background-color: $light;
       transform: skewY(-1deg);
-      box-shadow: 0.5rem 0.5rem 0 green;
+      box-shadow: 0.5rem 0.5rem 0 $dark-low;
+      @include mobile {
+        font-size: 4rem;
+        width: 80%;
+        text-shadow: 0.3rem 0.3rem 0 $red-main;
+      }
+
+      @include mobile-landscape {
+        font-size: 4rem;
+        text-shadow: 0.3rem 0.3rem 0 $red-main;
+      }
+
+      @include tablet {
+        font-size: 8rem;
+      }
 
       &::before {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 20%;
-        background-color: $blue-main;
         top: 0;
-        right: -2%;
-        z-index: 2;
-        opacity: 0.7;
+        right: -5%;
         transform: rotate(30deg);
+        @include tape-effect;
       }
 
       &::after {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 20%;
-        background-color: $blue-main;
         bottom: 0;
-        left: -2%;
-        z-index: 2;
-        opacity: 0.7;
+        left: -5%;
         transform: rotate(25deg);
+        @include tape-effect;
+      }
+    }
+
+    &--hash {
+      text-transform: none;
+      font-size: 5rem;
+      color: $green-main;
+      text-shadow: 0.3rem 0.3rem 0 $orange-main;
+      background-color: $light;
+      transform: skewY(2deg);
+      box-shadow: 0.5rem 0.5rem 0 $dark-low;
+      @include mobile {
+        margin-top: 4rem;
+        font-size: 2rem;
+        width: 90%;
+      }
+
+      @include mobile-landscape {
+        font-size: 2rem;
+      }
+
+      @include tablet {
+        font-size: 4rem;
+      }
+
+      &::before {
+        top: 0;
+        right: -5%;
+        transform: rotate(20deg);
+        @include tape-effect;
+      }
+
+      &::after {
+        top: 0;
+        left: -5%;
+        transform: rotate(-40deg);
+        @include tape-effect;
       }
     }
   }
