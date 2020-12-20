@@ -9,7 +9,7 @@ class Portfolio {
     const html = `
     <div class="portfolio__grid--item">
       <div class="item--img">
-        <img src="./${item.image}" alt="${item.alt}" />
+        <img src="./images/${item.image}" alt="${item.alt}" />
       </div>
       <div class="item--text">
         <div class="text--category">

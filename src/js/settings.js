@@ -1,6 +1,6 @@
 const portfolioData = [
   {
-    image: "admin.7c104f30.png",
+    image: "admin.png",
     alt: "admin_panel",
     purpose: "school",
     focus: "skill test",
@@ -12,7 +12,7 @@ const portfolioData = [
     depoLink: "https://kherma.github.io/project-01-admin-panel/",
   },
   {
-    image: "restaurant.e51a5fbd.png",
+    image: "restaurant.png",
     alt: "restaurant",
     purpose: "school",
     focus: "skill test",
@@ -25,7 +25,7 @@ const portfolioData = [
       "https://murmuring-wave-46799.herokuapp.com/?date=2020-12-04&hour=12&people=1&hours=1&phone=&address=#/home",
   },
   {
-    image: "api.77d6c145.png",
+    image: "api.png",
     alt: "mapty",
     purpose: "course",
     focus: "oop, api",
@@ -37,7 +37,7 @@ const portfolioData = [
     depoLink: "https://loving-nightingale-601569.netlify.app/",
   },
   {
-    image: "bankist.7ee588a2.png",
+    image: "bankist.png",
     alt: "bankist",
     purpose: "course",
     focus: "arrays, date & time",
@@ -49,7 +49,7 @@ const portfolioData = [
     depoLink: "https://hopeful-ramanujan-a0f4c6.netlify.app/",
   },
   {
-    image: "blog.71a5819c.png",
+    image: "blog.png",
     alt: "blog",
     purpose: "school",
     focus: "data structure",
@@ -61,7 +61,7 @@ const portfolioData = [
     depoLink: "https://kherma.github.io/school-05-javascript-blog/",
   },
   {
-    image: "dom.651b1946.png",
+    image: "dom.png",
     alt: "bankist_dom",
     purpose: "course",
     focus: "dom manipulation",
@@ -73,7 +73,7 @@ const portfolioData = [
     depoLink: "https://cranky-curran-3e989d.netlify.app/",
   },
   {
-    image: "game_1.13edd534.png",
+    image: "game_1.png",
     alt: "rock_paper_scissors",
     purpose: "school",
     focus: "intro to javascript",
@@ -85,7 +85,7 @@ const portfolioData = [
     depoLink: "https://kherma.github.io/school-04-javascript-prework/",
   },
   {
-    image: "game_2.cee0bbe3.png",
+    image: "game_2.png",
     alt: "dice_game",
     purpose: "course",
     focus: "skill test",
@@ -97,7 +97,7 @@ const portfolioData = [
     depoLink: "https://kherma.github.io/practice-03-dice-game-dom/",
   },
   {
-    image: "grid.d4bc39dd.png",
+    image: "grid.png",
     alt: "news_grid",
     purpose: "course",
     focus: "practice grid",
@@ -109,7 +109,7 @@ const portfolioData = [
     depoLink: "https://determined-chandrasekhar-9a7b2f.netlify.app/",
   },
   {
-    image: "hania.861d9141.png",
+    image: "hania.png",
     alt: "how_i_met_your_hania",
     purpose: "personal",
     focus: "fun",
@@ -121,7 +121,7 @@ const portfolioData = [
     depoLink: "http://haniaambroziewiczisajerk.herokuapp.com/",
   },
   {
-    image: "sass.dd9b4d93.png",
+    image: "sass.png",
     alt: "portfolio_website",
     purpose: "course",
     focus: "practice sass",
@@ -133,7 +133,7 @@ const portfolioData = [
     depoLink: "https://stoic-cray-f8ac53.netlify.app/index.html",
   },
   {
-    image: "sheet.89aec90e.png",
+    image: "sheet.png",
     alt: "git_sheet",
     purpose: "personal",
     focus: "git, github",
