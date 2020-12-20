@@ -14,7 +14,7 @@
     "build": "npm-run-all build:* test",
     "build:clean": "mkdirp dist && rm -r dist && mkdirp dist",
     "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
-    "build:sass": "node-sass --output-style compact -o dist/css src/sass",
+    "build:sass": "node-sass --output-style compressed -o dist/css src/sass",
     "build:autoprefixer": "globstar autoprefixer-cli \"dist/css/*.css\"",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o dist/css src/sass",
@@ -23,7 +23,7 @@
     "watch:sassprefixer": "onchange \"src/sass/**/*.scss\" -- npm run build-dev",
     "watch:copy": "onchange -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" -- copyfiles -a -u 1 {{changed}} dist",
     "production": "parcel build ./dist/index.html --no-source-maps --out-dir production --public-url ./",
-    "deploy": "gh-pages -d production"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
