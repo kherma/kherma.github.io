@@ -1,8 +1,8 @@
-import portfolioData from "./settings.js";
+import { portfolioData } from './../settings.js';
 
 class Portfolio {
   constructor() {
-    this.portfolioContainer = document.querySelector(".portfolio__grid");
+    this.portfolioContainer = document.querySelector('.portfolio__grid');
   }
 
   generatePortfolioItem(item) {
@@ -50,7 +50,7 @@ class Portfolio {
     </div>
     `;
 
-    this.portfolioContainer.insertAdjacentHTML("beforeend", html);
+    this.portfolioContainer.insertAdjacentHTML('beforeend', html);
   }
 
   generatePortfolio() {
@@ -60,5 +60,4 @@ class Portfolio {
   }
 }
 
-const createPortfolio = new Portfolio();
-createPortfolio.generatePortfolio();
+export default new Portfolio();
