@@ -1,0 +1,126 @@
+.challenges {
+  background-color: $light-mid;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 3rem;
+    background-color: $yellow-main;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 40%,
+      80% 40%,
+      55% 100%,
+      45% 100%,
+      20% 40%,
+      0 40%
+    );
+  }
+
+  @keyframes title-animation {
+    0% {
+      transform: rotate(-1deg) skew(1deg);
+    }
+    50% {
+      transform: rotate(1deg) skew(-1deg);
+    }
+    100% {
+      transform: rotate(-1deg) skew(1deg);
+    }
+  }
+
+  &__grid {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    @include mobile-landscape {
+      grid-template-columns: 1fr;
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--item {
+      margin: 1rem;
+      height: auto;
+      border-radius: 3%;
+      box-shadow: 0.5rem 0.5rem 0.5rem $dark-low;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      @include mobile {
+        height: auto;
+      }
+      @include mobile-landscape {
+        margin: 0 auto;
+        height: 100vh;
+        width: 60vw;
+      }
+
+      @include tablet {
+        height: 40rem;
+      }
+      &:hover {
+        .item--challenge {
+          transform: translateX(0);
+        }
+
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $dark-mid;
+        opacity: 0;
+        transition: all 0.3s;
+        transform: scale(2) rotate(45deg) translateY(20rem);
+      }
+
+      &:hover::after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.item--img {
+  flex: 0 0 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+
+  img {
+    transition: all 0.3s;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+}

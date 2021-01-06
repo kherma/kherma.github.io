@@ -17,7 +17,7 @@
 }
 
 @mixin tape-effect {
-  content: "";
+  content: '';
   position: absolute;
   width: 15%;
   height: 20%;
@@ -48,4 +48,45 @@
     95% 10%,
     100% 0
   );
+}
+
+@mixin title($text-shadow, $delay, $hover-color, $link-color) {
+  z-index: 1;
+  margin: 5rem;
+  font-size: 5rem;
+  text-shadow: 0.3rem 0.3rem 0 $text-shadow;
+  box-shadow: 0.5rem 0.5rem 0 $dark-low;
+  animation: title-animation 4s #{$delay} infinite;
+
+  display: inline-block;
+  background-color: $light;
+  padding: 2rem;
+  h2 {
+    transition: all 0.5s;
+  }
+  a {
+    transition: all 1s;
+    color: $link-color;
+  }
+  &:hover h2 {
+    transform: scale(1.02);
+  }
+  &:hover a {
+    color: $hover-color;
+  }
+}
+
+@mixin item($color) {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-left: 2rem;
+  margin-left: 0 5rem;
+  height: 100%;
+  transition: all 0.3s;
+  transform: translateX(-50rem);
+  z-index: 2;
+  color: $color;
+  text-transform: uppercase;
 }
