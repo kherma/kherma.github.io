@@ -166,3 +166,15 @@ export const challengeData = [
     depoLink: 'https://challenge-01-form-validation.herokuapp.com/',
   },
 ];
+
+export const fccData = [
+  {
+    image: 'rwd.png',
+    alt: 'fcc_rwd',
+    focus: 'Responsive Web Design',
+    fcc: 'freecodecamp',
+    fccLink: 'https://www.freecodecamp.org/kherma',
+    codepen: 'codepen',
+    codepenLink: 'https://codepen.io/kherma',
+  },
+];
