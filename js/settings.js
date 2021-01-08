@@ -148,8 +148,17 @@ export const portfolioData = [
 
 export const challengeData = [
   {
+    image: 'movie_book.png',
+    alt: 'challenge_image',
+    focus: 'localstorage usage',
+    technology: 'html, css, javascript',
+    responsiveness: 'desktop, tablet, mobile',
+    deploy: 'netlify',
+    depoLink: 'https://amazing-yalow-85adfd.netlify.app/',
+  },
+  {
     image: 'mode_switch.png',
-    alt: 'react_todo',
+    alt: 'challenge_image',
     focus: 'dark / light mode switch',
     technology: 'html, css, javascript',
     responsiveness: 'desktop, tablet, mobile',
@@ -158,7 +167,7 @@ export const challengeData = [
   },
   {
     image: 'form_validation.png',
-    alt: 'react_todo',
+    alt: 'challenge_image',
     focus: 'form validation',
     technology: 'html, css, javascript',
     responsiveness: 'desktop, tablet, mobile',
