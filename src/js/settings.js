@@ -12,6 +12,18 @@ export const portfolioData = [
     depoLink: 'https://react-and-redux-to-do-list.herokuapp.com/',
   },
   {
+    image: 'monsters_react.png',
+    alt: 'monsters_react',
+    purpose: 'course',
+    focus: 'intro to react',
+    technology: 'react',
+    responsiveness: 'desktop',
+    repository: 'github',
+    repoLink: 'https://github.com/kherma/practice-13-monsters-react',
+    deploy: 'github pages',
+    depoLink: 'https://kherma.github.io/practice-13-monsters-react/',
+  },
+  {
     image: 'admin.png',
     alt: 'admin_panel',
     purpose: 'school',
