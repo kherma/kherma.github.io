@@ -1,5 +1,17 @@
 export const portfolioData = [
   {
+    image: 'natours.png',
+    alt: 'natours',
+    purpose: 'course',
+    focus: 'advanced sass',
+    technology: 'sass',
+    responsiveness: 'desktop, tablet, mobile',
+    repository: 'github',
+    repoLink: 'https://github.com/kherma/practice-10-scss-natour',
+    deploy: 'github pages',
+    depoLink: 'https://kherma.github.io/practice-10-scss-natour/',
+  },
+  {
     image: 'react_todo.png',
     alt: 'react_todo',
     purpose: 'school',
