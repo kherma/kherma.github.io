@@ -1,5 +1,18 @@
 export const portfolioData = [
   {
+    image: 'git.png',
+    alt: 'git',
+    purpose: 'personal',
+    focus: 'git, dark mode',
+    technology: 'html, sass, js',
+    responsiveness: 'desktop, tablet, mobile',
+    repository: 'github',
+    repoLink:
+      'https://github.com/kherma/coding-challenges/tree/main/02-git-cheat-sheet-main',
+    deploy: 'heroku',
+    depoLink: 'https://challenge-02-git-cheat-sheet.herokuapp.com/',
+  },
+  {
     image: 'natours.png',
     alt: 'natours',
     purpose: 'course',
